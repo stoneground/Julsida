@@ -1,0 +1,99 @@
+/*Centered layout*/
+body{
+
+}
+main{
+	width: 80%;
+	margin: 0 auto;
+    background-color: transparent;
+
+}
+header{
+	width: 100%;
+    background-color: transparent;
+}
+nav{
+	width: 100%;
+	font-family: 'Noto Sans TC', sans-serif;
+	font-size: 2em;
+}
+nav> ul{
+	list-style: none;
+	display: inline;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li > a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li > a:hover {
+    background-color: #111;
+}
+section{
+height: 80;
+background-color: transparent;
+}
+h1 {
+	font-size: 4em;
+}
+p{
+	font-size: 1.2em;
+	color:white;
+}
+/*this is all the fonts forh1,h2,h3,h4,h5,h6 and the style*/
+body, h1,h2,h3,h4,h5,h6 {font-family: 'Montserrat', sans-serif}
+.row-padding img {margin-bottom: 12px}
+/* Sätter widthen på sidebar till 120px */
+.sidebar {width: 120px;background: #222;}
+/* Lägger till en vänster marginal till "sidans inehåll"som borde matcha med höjden på sidebaren som är(120px) */
+#main {margin-left: 120px}
+/* Tar bort marginal från "sido inehåll" på små skärmar som mobiler */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+
+/*This is making the text glow*/
+.glow {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+/* making the text glow*/
+ align-text;{
+    text-align:center;
+}
+/*footer*/
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: transparent;
+   color: white;
+   text-align: center;
+}
